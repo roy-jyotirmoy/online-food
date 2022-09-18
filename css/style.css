@@ -6,6 +6,14 @@
 html {
   scroll-behavior: smooth;
 }
+body {
+  position: relative;
+}
+body::after {
+  content: '';
+  display: block;
+  height: 50px;
+}
 
 /* CSS Variables */
 :root {
@@ -144,7 +152,8 @@ html {
 
 /* Contact Section*/
 #contact {
-  position: static;
+  position: relative;
+  z-index: -1;
 }
 #contact::before {
   content: '';
@@ -177,12 +186,18 @@ html {
   font-size: 1.1rem;
   margin: 5px 0px;
 }
+
 footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100vw;
+  height: 50px;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 1.2rem;
   background: black;
   color: white;
-  padding: 9px 20px;
+  padding: 9px 0px;
 }
 
 /* Utility Classes */

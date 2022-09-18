@@ -60,6 +60,9 @@
   font-size: 0.8rem;
 }
 /* Footer */
+footer {
+  font-size: 1.1rem;
+}
 
 /* Utility Classes */
 .h-primary {
