@@ -1,0 +1,212 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root {
+  --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+}
+#navbar::before {
+  content: '';
+  background-color: black;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo {
+  margin: 10px 30px;
+}
+#logo img {
+  height: 60px;
+  margin: 3px 6px;
+}
+
+/* Navigation Bar: List Items */
+#navbar ul {
+  display: flex;
+  font-family: 'Ubuntu', sans-serif;
+}
+#navbar ul li {
+  list-style: none;
+  font-size: 1.2rem;
+}
+#navbar ul li a {
+  color: white;
+  display: block;
+  padding: 3px 30px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+#navbar ul li a:hover {
+  color: black;
+  background-color: white;
+}
+
+/* Home Section */
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 200px;
+  height: 325px;
+  justify-content: center;
+  align-items: center;
+  position: static;
+}
+#home::before {
+  content: '';
+  background: url('../img/background/bg1.jpg') no-repeat center center/cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 406px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.89;
+}
+#home h1 {
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+}
+#home p {
+  color: white;
+  font-size: 1.5rem;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+/* Service Section */
+#services {
+  margin: 15px 20px 34px;
+  display: flex;
+}
+
+#services .box {
+  border: 2px solid brown;
+  padding: 20px;
+  margin: 6px 20px 20px;
+  border-radius: 20px;
+  background-color: #f2f2f2;
+}
+#services .box img {
+  height: 160px;
+  display: block;
+  margin: auto;
+}
+#services .box p {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+/* Clients Section */
+#client-section {
+  height: auto;
+  position: static;
+}
+#client-section::before {
+  content: '';
+  position: absolute;
+  background: url('../img/background/bg.jpg') no-repeat center center/cover;
+  height: 315px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.9;
+}
+#clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.client-item {
+  padding: 34px;
+}
+#clients img {
+  height: 100px;
+  display: block;
+  margin: auto;
+}
+
+/* Contact Section*/
+#contact {
+  position: static;
+}
+#contact::before {
+  content: '';
+  position: absolute;
+  background: url('../img/background/client-bg.jpg') no-repeat center
+    center/cover;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+#contact-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 34px;
+}
+#contact-box form {
+  width: 30%;
+}
+#contact-box label {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.2rem;
+}
+#contact-box input,
+#contact-box textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 6px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.1rem;
+  margin: 5px 0px;
+}
+footer {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.2rem;
+  background: black;
+  color: white;
+  padding: 9px 20px;
+}
+
+/* Utility Classes */
+.h-primary {
+  font-size: 3.5rem;
+  font-family: 'Josefin Sans', sans-serif;
+  padding: 12px;
+}
+.h-secondary {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2.1rem;
+  padding: 12px;
+}
+.btn {
+  padding: 6px 20px;
+  border: 2px solid white;
+  background-color: brown;
+  color: white;
+  margin: 17px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.center {
+  text-align: center;
+}
