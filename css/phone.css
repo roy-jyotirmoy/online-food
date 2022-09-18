@@ -4,7 +4,7 @@
   position: relative;
 }
 #navbar::before {
-  opacity: 0.9;
+  opacity: 0.4;
 }
 #navbar ul {
   padding-bottom: 8px;
